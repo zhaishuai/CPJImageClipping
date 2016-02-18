@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkQ-HV-ML8">
+                                <rect key="frame" x="0.0" y="531" width="295" height="69"/>
+                                <color key="backgroundColor" red="0.89661713649999997" green="0.89661713649999997" blue="0.89661713649999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="jpr-2k-dCF"/>
+                                </constraints>
+                                <state key="normal" title="选择图片">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IBn-eq-gsR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgp-Q9-XK8">
+                                <rect key="frame" x="305" y="531" width="295" height="69"/>
+                                <color key="backgroundColor" red="0.89661713649999997" green="0.89661713649999997" blue="0.89661713649999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="裁剪图片">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57254901960000004" green="0.70588235290000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gkQ-HV-ML8" firstAttribute="top" secondItem="IBn-eq-gsR" secondAttribute="bottom" id="159-j7-U30"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kgp-Q9-XK8" secondAttribute="bottom" id="4sT-Ry-UVu"/>
+                            <constraint firstItem="gkQ-HV-ML8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EpX-ni-ZvB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kgp-Q9-XK8" secondAttribute="trailing" constant="-20" id="FNd-H7-gck"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gkQ-HV-ML8" secondAttribute="bottom" id="TPe-sR-toH"/>
+                            <constraint firstItem="Kgp-Q9-XK8" firstAttribute="width" secondItem="gkQ-HV-ML8" secondAttribute="width" id="cgn-yW-xRx"/>
+                            <constraint firstItem="IBn-eq-gsR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="hlh-2f-aGI"/>
+                            <constraint firstItem="Kgp-Q9-XK8" firstAttribute="top" secondItem="IBn-eq-gsR" secondAttribute="bottom" id="jgJ-JV-kee"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IBn-eq-gsR" secondAttribute="trailing" constant="-20" id="rAj-3C-dtM"/>
+                            <constraint firstItem="IBn-eq-gsR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="uzu-b7-U8u"/>
+                            <constraint firstItem="Kgp-Q9-XK8" firstAttribute="leading" secondItem="gkQ-HV-ML8" secondAttribute="trailing" constant="10" id="wj2-3v-nj9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
