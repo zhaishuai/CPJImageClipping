@@ -27,8 +27,11 @@
                                 <state key="normal" title="选择图片">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPx-pI-dM6"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IBn-eq-gsR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IBn-eq-gsR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="531"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -38,6 +41,9 @@
                                 <state key="normal" title="裁剪图片">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="cropImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAP-2b-VUR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.57254901960000004" green="0.70588235290000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,6 +61,9 @@
                             <constraint firstItem="Kgp-Q9-XK8" firstAttribute="leading" secondItem="gkQ-HV-ML8" secondAttribute="trailing" constant="10" id="wj2-3v-nj9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="IBn-eq-gsR" id="0fz-67-grZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
