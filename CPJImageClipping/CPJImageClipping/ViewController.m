@@ -14,6 +14,7 @@
 
 @property (nonatomic) NSMutableArray *capturedImages;
 @property (nonatomic) UIImagePickerController *imagePickerController;
+
 @end
 
 @implementation ViewController
