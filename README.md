@@ -1,7 +1,7 @@
 # CPJImageClipping
 CPJImageClipping是一个专门裁剪图片的库。
 #Screenshot
-<center>![裁剪图片](https://github.com/zhaishuai/CPJImageClipping/blob/master/3.png)<center/>
+<center>![裁剪图片](https://github.com/zhaishuai/CPJImageClipping/blob/master/3.png)</center>
 #How to Use
 CPJImageClipping使用起来非常简单，不需要编译静态库也不需要其他额外的配置只需要将<code>CPJClippingPanel</code>文件夹下的文件拷贝至自己的工程下即可。<br/>
 ##代码示例
